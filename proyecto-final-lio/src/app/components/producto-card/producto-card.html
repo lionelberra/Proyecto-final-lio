@@ -1,0 +1,44 @@
+
+<div class="card artista-card h-100">
+  <img
+    [src]="producto.imagenArt"
+    [alt]="producto.nombre"
+    class="card-img-top imagen-artista"
+  >
+
+  <div class="card-body d-flex flex-column">
+    <h5 class="card-title">{{ producto.nombre }}</h5>
+
+    <p class="card-text">{{ producto.oyentes }}</p>
+
+    <button
+      class="btn btn-success mt-auto"
+      (click)="abrirTema()">
+      Ver tema más escuchado
+    </button>
+  </div>
+</div>
+
+@if (mostrarTema) {
+  <div class="cartel-fondo" (click)="cerrarTema()">
+    <div class="cartel" (click)="$event.stopPropagation()">
+      <button class="btn-cerrar" (click)="cerrarTema()">×</button>
+
+      <h3>Tema más escuchado</h3>
+
+      <img
+        [src]="producto.imagenTem"
+        [alt]="producto.temaMasEscuchado"
+        class="imagen-tema"
+      >
+
+      <h4>{{ producto.temaMasEscuchado }}</h4>
+      <p>Artista: {{ producto.nombre }}</p>
+
+      <button class="btn btn-secondary" (click)="cerrarTema()">
+        Cerrar
+      </button>
+    </div>
+  </div>
+}
+

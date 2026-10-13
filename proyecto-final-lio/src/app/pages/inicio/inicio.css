@@ -1,0 +1,23 @@
+.bienvenida {
+  background-color: #f0f8f4;
+  padding: 60px 25px;
+  border-radius: 20px;
+  margin-top: 30px;
+}
+
+.bienvenida h1 {
+  color: #198754;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.mensaje {
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.bienvenida .btn {
+  padding: 12px 25px;
+}
