@@ -1,23 +1,41 @@
+/* ==========================================
+   ESTILOS PARA LA SECCIÓN DE INICIO (.bienvenida)
+   ========================================== */
 .bienvenida {
-  background-color: #f0f8f4;
+  background-color: #141026; /* Mismo fondo de tarjeta violeta oscuro */
   padding: 60px 25px;
   border-radius: 20px;
   margin-top: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  border: 1px solid #281f4a; /* Borde sutil en tono morado */
 }
 
 .bienvenida h1 {
-  color: #198754;
+  color: #c792ea; /* Título en lila brillante */
   font-weight: bold;
   margin-bottom: 25px;
+  font-size: 2.2rem;
 }
 
-.mensaje {
+.bienvenida .mensaje {
   font-size: 1.2rem;
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.8;
+  color: #b3adc9; /* Gris violáceo suave para lectura cómoda */
 }
 
 .bienvenida .btn {
   padding: 12px 25px;
+  background-color: #c792ea; /* Botón en tono lila/morado */
+  border-color: #c792ea;
+  color: #120d21; /* Texto oscuro para contraste */
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.bienvenida .btn:hover {
+  background-color: #b07cd4; /* Un lila un poco más oscuro al pasar el mouse */
+  border-color: #b07cd4;
+  color: #ffffff;
 }

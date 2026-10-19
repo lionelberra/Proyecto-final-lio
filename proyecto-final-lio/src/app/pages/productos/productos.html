@@ -3,7 +3,7 @@
   <h2 class="text-center mb-4">Mis artistas favoritos</h2>
 
   <div class="row g-4">
-    @for (producto of productos; track producto.id) {
+    @for (producto of ArtistasFiltrados; track producto.id) {
       <div class="col-12 col-sm-6 col-lg-4">
         <app-producto-card
           [producto]="producto">

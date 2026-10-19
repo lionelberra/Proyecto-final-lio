@@ -1,0 +1,20 @@
+app-navbar {
+    background-color: #120d21; /* Violeta oscuro profundo */
+    border-bottom: 1px solid #281f4a; /* Línea sutil para separarlo del contenido */
+    display: block;
+    padding: 15px 20px;
+    color: #e2e0ea; /* Color del texto por si hay elementos directos */
+}
+
+/* ==========================================
+   ESTILOS PARA EL FOOTER (Morado oscuro)
+   ========================================== */
+app-footer {
+    background-color: #120d21; /* Un morado oscuro profundo que combina con el resto de la página */
+    border-top: 1px solid #281f4a; /* Una línea sutil en un morado un poco más claro para separarlo */
+    display: block;
+    padding: 25px 20px;
+    text-align: center;
+    color: #a39bc9; /* Un gris violáceo claro para que el texto se lea bien */
+}
+

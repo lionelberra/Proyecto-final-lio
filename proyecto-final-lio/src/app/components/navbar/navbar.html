@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
+  <div class="container-fluid" >
 
     <a class="navbar-brand" routerLink="/inicio">
       ARTISTAS
@@ -12,12 +12,15 @@
       <a class="nav-link" routerLink="/contacto">Contacto</a>
     </div>
 
-    <form class="d-flex" role="search">
+    
+    <form class="d-flex" role="search" (ngSubmit)="buscarArtistas()">
       <input
         class="form-control me-2"
         type="search"
         placeholder="Buscar Artistas"
         aria-label="Buscar"
+        name="busqueda"
+        [(ngModel)]="busqueda"
       />
       <button class="btn btn-outline-success" type="submit">
         Buscar
